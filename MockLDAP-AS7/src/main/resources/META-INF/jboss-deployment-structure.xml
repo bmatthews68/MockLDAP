@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-deployment-structure>
+    <deployment>
+        <resources>
+            <resource-root path="MockLDAP-AS7-${project.version}.jar" />
+        </resources>
+    </deployment>
+</jboss-deployment-structure>

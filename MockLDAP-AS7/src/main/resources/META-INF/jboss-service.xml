@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<server xmlns="urn:jboss:service:7.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+            urn:jboss:service:7.0
+            jboss-service_7_0.xsd">
+    <mbean code="com.btmatthews.mockldap.as7.MockLDAP" name="service.server.mockldap:service=MockLDAP">
+        <attribute name="BaseDn">${ldap.base.dn}</attribute>
+        <attribute name="Port">${ldap.port}</attribute>
+        <attribute name="LdifFile">${ldap.ldif.file}</attribute>
+        <attribute name="UserDn">${ldap.user.dn}</attribute>
+        <attribute name="Password">${ldap.password}</attribute>
+    </mbean>
+</server>

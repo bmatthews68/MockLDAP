@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation=" http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <prerequisites>
+        <maven>3.0.4</maven>
+    </prerequisites>
+    <parent>
+        <groupId>com.btmatthews.mockldap</groupId>
+        <artifactId>mockldap</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+    <artifactId>mockldap-as7</artifactId>
+    <packaging>jboss-sar</packaging>
+    <name>MockLDAP for AS7</name>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>jboss-packaging-maven-plugin</artifactId>
+                <version>2.2</version>
+                <!-- Enable packaging types and lifecycle bindings. -->
+                <extensions>true</extensions>
+
+            </plugin>
+        </plugins>
+    </build>
+    <dependencies>
+        <dependency>
+            <groupId>com.unboundid</groupId>
+            <artifactId>unboundid-ldapsdk</artifactId>
+            <version>2.3.1</version>
+        </dependency>
+    </dependencies>
+</project>	
